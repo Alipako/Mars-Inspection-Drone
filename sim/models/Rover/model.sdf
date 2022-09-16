@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="Rover">
+      <static>1</static>
+      <link name='link'>
+        <collision name="collision">
+            <geometry>
+              <mesh>
+                <scale>2 2 2</scale>
+                <uri>model://Rover/meshes/Rover.dae</uri>
+              </mesh>
+            </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://Rover/meshes/Rover.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>   
+  </model>
+</sdf>
